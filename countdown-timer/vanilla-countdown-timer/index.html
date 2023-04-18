@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contdown timer</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="body body--red">
+    <script src="main.js"> </script>
+
+    <div class="stopwatch-section">
+        <span class="stopwatch-input-section">
+            <span class="stopwatch-input-section-form-group">
+                <input maxlength="2" class="stopwatch-input-section__input" id="hours-input" type="number"
+                    placeholder="00" oninput="this.value = this.value.slice(0 , this.maxLength)">
+                <label for="hours-input">Hours</label>
+            </span>
+
+            <span>:</span>
+            <span class="stopwatch-input-section-form-group">
+                <input maxlength="2" class="stopwatch-input-section__input" id="minutes-input" type="number"
+                    placeholder="00" oninput="this.value = this.value.slice(0 , this.maxLength)">
+                <label for="minutes-input">Minutes</label>
+            </span>
+            <span>:</span>
+            <span class="stopwatch-input-section-form-group">
+                <input maxlength="2" class="stopwatch-input-section__input" id="seconds-input" type="number"
+                    placeholder="00" oninput="this.value = this.value.slice(0 , this.maxLength)">
+                <label for="seconds-input">Seconds</label>
+            </span>
+        </span>
+
+        <!-- requirements are more complex.... we need a start , pause , continue, reset -->
+        <!-- stop does not really make sense because it is a countdown timer -->
+
+        <span class="stopwatch-control-section">
+            <button class="stopwatch-control__button stopwatch-control__start-button" id="start-btn">start</button>
+            <button class="stopwatch-control__button stopwatch-control__pause-continue-button"
+                id="pause-continue-btn">pause</button>
+            <button class="stopwatch-control__button stopwatch-control__reset-button" id="reset-btn">reset</button>
+        </span>
+    </div>
+
+
+</body>
+
+</html>

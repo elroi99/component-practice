@@ -1,0 +1,14 @@
+/* * {
+    box-sizing : border-box;
+} */
+
+.first, .second {
+    border : 1px solid black;
+    padding : 10px;
+    width : 200px;
+}
+
+.container {
+    height : 200px;
+    align-self : center;
+}

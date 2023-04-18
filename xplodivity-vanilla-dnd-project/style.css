@@ -1,0 +1,52 @@
+body {
+    background-color: blue;
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 3px;
+}
+
+.container{
+    /* flexbox is not the right choice for this
+    flexbox lets us set up gap between rows NOT individual items 
+    that is why I had to do margin : 0 1px in the square to get gap to left and right of squares */
+    display : flex;
+    flex : 0 0 auto;
+    flex-wrap : wrap;
+    padding : 2px;
+    width : 310px;
+    height : 310px;
+    background-color : lightcoral;
+}
+.square {
+    height : 100px;
+    width : 100px;
+    border-radius : 5px;
+    margin : 0 1px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+
+.gradient {
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%); 
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+}
+
+.button-style{
+    border : none;
+    background-color: inherit;
+}
+
+img {
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+    z-index : 1000;
+    position : absolute;
+}

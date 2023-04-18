@@ -1,0 +1,62 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* IMP NOTE --- THE BEM is pretty much incorrect. do not rely on it */
+
+.stopwatch-section{
+    width : 300px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch-input-section{
+    display : flex;
+}
+
+/* a block */
+.stopwatch-input-section-form-group{
+    display : flex;
+    flex-direction: column;
+}
+
+.stopwatch-input-section__input{
+    max-width : 90px;
+}
+
+.stopwatch-control-section{
+    width : 100%;
+    display : flex;
+    justify-content: space-around;
+    margin : 5px;
+}
+
+.stopwatch-control__button{
+    padding :  2px 10px;
+    border : 0;
+    border-radius : 2px;
+}
+
+.stopwatch-control__start-button{
+    background-color: green;
+}
+
+.stopwatch-control__pause-continue-button{
+    background-color: lightblue;
+}
+
+.stopwatch-control__reset-button{
+    background-color: yellow; 
+}
+
+
+
+
+
+

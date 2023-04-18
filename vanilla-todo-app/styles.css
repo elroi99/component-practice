@@ -1,0 +1,29 @@
+body {
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+.todo-app{
+    max-width : 400px;
+}
+
+.todo-creator{
+    margin  : 10px 0px;
+}
+
+.todo-display__zero-state-text{
+    display : inline-block;
+}
+
+.todo-display-section__note{
+    margin : 10px;
+}
+
+.noteSpan {
+    display : inline-block;
+    margin : 0 0 10px 0;
+    height : 100px;
+    border : 1px solid black;
+}
+
